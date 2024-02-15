@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const callMeMoby = function (x, theFunction) {
-  for (let i = 0; i < x; i++) {
-    theFunction();
+exports.callMeMoby = function (x, theFunction) {
+  while (x > 0) {
+    theFunction.call();
+    x--;
   }
 };
-exports.callMeMoby = callMeMoby;
